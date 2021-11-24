@@ -8,13 +8,26 @@ body {
 }
 
 
-.back-ground{
+/*.back-ground{
   background-image: url(bg7.jpg);
   background-color: #cccccc;
-  /*height: 500px;*/
-  background-position: xpos ypos;
+  height: 1000px;
+  background-position: center;
   background-size: 100% 100%;
   position: relative  
+}*/
+.back-ground {
+  /*padding-bottom: 50px;*/
+  height: 100%;
+  background-image: url(bg7.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+}
+
+.wave{
+  display: block;
+  top: 0;
+  bottom: 0;
 }
 
 .nav-bar{
@@ -26,6 +39,7 @@ body {
   background: rgba(0, 0, 0, 0.1);
    backdrop-filter: blur(2px);
   -webkit-backdrop-filter: blur(2px);
+  -moz-backdrop-filter: blur(2px);
 }
 
 .navbar-nav li{
@@ -44,10 +58,12 @@ body {
   color: #240b36;
   border-radius: 20px;
   -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   background: rgba(255, 255, 255, 0.3);
   box-shadow: 0 8px 20px 0 rgba(31, 38, 135, 0.13);
   backdrop-filter: blur(7px);
   -webkit-backdrop-filter: blur(7px);
+  -moz-backdrop-filter: blur(7px);
   z-index: 3;
   transition: 0.5s;
 }
@@ -59,16 +75,20 @@ body {
   padding: 10px 40px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   transition: all 0.5s ease;
   outline: none;
   background: #003f74;
   box-shadow: 0 5px 16px 0 rgba(31, 31, 31, 0.2);
+  -webkit-box-shadow: 0 5px 16px 0 rgba(31, 31, 31, 0.2);
+  -moz-box-shadow: 0 5px 16px 0 rgba(31, 31, 31, 0.2);
 }
 
 .jmbBtn:hover{
   background: #02739d;
   color: #fff;
 }
+
 
 .nMarco{
   padding-top: 80px;
@@ -82,6 +102,7 @@ body {
 .imgSize{
   border-radius: 60px;
   -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   transition: 0.8s;
 }
 
@@ -101,31 +122,77 @@ body {
   width: 150px;
   border-radius: 50%;
   -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
   transition: 0.8s;
-  box-shadow: 0 10px 32px 0 rgba(31, 31, 31, 0.3);
+  box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, 0.15), 2px 2px 17px 2px rgba(0,0,0,1);
+  -webkit-box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, 0.15), 2px 2px 17px 2px rgba(0,0,0,1);
+  -moz-box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, 0.15), 2px 2px 17px 2px rgba(0,0,0,1);
 }
 
 .marco-img:hover {
   border-radius: 20px;
   -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
   transition: 0.8s;
-  box-shadow: 0 10px 32px 0 rgba(31, 31, 31, 0.3);
+  box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, 0.15), 2px 2px 17px 2px rgba(0,0,0,1);
+  -webkit-box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, 0.15), 2px 2px 17px 2px rgba(0,0,0,1);
+  -moz-box-shadow: -2px -2px 20px 2px rgba(0, 0, 0, 0.15), 2px 2px 17px 2px rgba(0,0,0,1);
 }
 
 .aBack-ground{
-  padding: 20px;
-  background: linear-gradient(#09264e, #19809e);
-  background: -webkit-linear-gradient(#09264e, #19809e);
+  padding: 20px 0;
   /*background-repeat: no-repeat;
   background-attachment: fixed;*/
 }
 
 .aboutH{
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  -webkit-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  -moz-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   padding-bottom: 50px;
+  font-weight: 600;
   font-size: 50px;  
-  color: #c8f3e9;
+  color: #09264e;
+}
+
+.wExperience{
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  -webkit-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  -moz-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
+  padding-bottom: 50px;
+  font-weight: 600;
+  font-size: 50px; 
+  color: #bfe0c3;
+}
+
+.wCompany,.wDescription,.wRole{
+  font-weight: 300;
+  color: #bfe0c3;
+}
+
+.aPadding{
+  padding-bottom: 20px;
 }
 
 .aM{
+  padding: 10px;
   font-weight: 600;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.59);
+  -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.59);
+  -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.59);
+  transition: 0.8s;
 }
+.aM:hover{
+  transform: scale(1.1);
+}
+
+.eAttainment{
+  background: linear-gradient(180deg, #09264e, #19809e);
+}
+
+/*.projects{
+  background: linear-gradient(180deg, #09264e, #19809e);
+}*/
