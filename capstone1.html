@@ -5,15 +5,13 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>B146</title>
 
-	    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
-    />
+	<!-- Icon -->
+	<link rel="icon" class="hIcon" type="text/css" href="assets/jmp.png">
+
     <!-- Google Fonts -->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
 
 
 	<!-- Local File Bootstrap -->
@@ -28,10 +26,8 @@
 	<!-- CDN Bootstrap Icons -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 
-	<!-- CDN FontAwsome Icons -->
-	<script src="https://kit.fontawesome.com/ca7a00d3bf.js" crossorigin="anonymous"></script>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
-	
+	<!-- Font Awesome Icon -->
+	<script src="https://kit.fontawesome.com/e218afe3d7.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -41,23 +37,23 @@
 		<section class="nav-bar">
 			<nav class="navbar navbar-expand-lg navbar-light ">
 			  <div class="container">
-			    <a class="navbar-brand" href="#">Navbar</a>
+			    <a class="navbar-brand navN" href="#"><img src="assets/jmp.png" class="mLogo">MarksFolio</a>
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 			      <span class="navbar-toggler-icon"></span>
 			    </button>
 			    <div class="collapse navbar-collapse" id="navbarNav">
 			      <ul class="navbar-nav ms-auto">
 			        <li class="nav-item">
-			          <a class="nav-link" href="#">Home</a>
+			          <a class="nav-link" href="#"><i class="fas fa-house-user navIcon"></i>Home</a>
 			        </li>
 			        <li class="nav-item">
-			          <a class="nav-link" href="#about">About</a>
+			          <a class="nav-link" href="#about"><i class="fas fa-info-circle navIcon"></i>About</a>
 			        </li>
 			        <li class="nav-item">
-			          <a class="nav-link" href="#projects">Projects</a>
+			          <a class="nav-link" href="#projects"><i class="fas fa-tasks navIcon"></i>Projects</a>
 			        </li>
  			       <li class="nav-item">
-			          <a class="nav-link" href="#contacts">Contacts</a>
+			          <a class="nav-link" href="#contacts"><i class="fas fa-address-book navIcon"></i>Contacts</a>
 			        </li>
 			      </ul>
 			    </div>
@@ -73,11 +69,17 @@
 					<div class="jumbotron jumb1 py-md-5 px-md-5">
 						<div class="row jmbSize ">
 							<div class="col-sm-7">
-  								<h1 class="nMarco">Hello! I'm John Marco Pagulayan</h1>
+  								<h1 class="nMarco">Hello! I'm "John Marco Pagulayan"</h1>
 	  							<p class="lead">an Aspiring Full Stack Developer / Web Developer</p>
 	  							<div class="mt-4 mb-4">
-  									<a class="btn jmbBtn mr-3 text-center" href="#" role="button">Learn more</a>
+  									<a class="btn jmbBtn mr-3 text-center" href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
   								</div>
+  								<div class="icon">
+									<a href="https://www.facebook.com/mharko.pagulayan" target="_blank"><i class="fab fa-facebook iconbtn"></i></a>
+									<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fab fa-google-plus-square iconbtn"></i></a>
+									<a href="https://github.com/pagulayan09" target="_blank"><i class="fab fa-github iconbtn"></i></a>
+									<a href="https://gitlab.com/pagulayan415" target="_blank"><i class="fab fa-gitlab iconbtn"></i></a>
+								</div>
   							</div>
   							<div class="col-md-5">
   								<img src="assets/profile.jpg" class="img-fluid imgSize">
@@ -101,17 +103,27 @@
 						<h1 class="aboutH">About</h1>
 					</div>
 					<div class="col-sm-12 col-md-6 col-lg-5 aPadding">
-						<img src="assets/profile.jpg" class="img-fluid marco-img">
+						<img src="assets/marco.jpg" class="img-fluid marco-img">
 					</div>
 					<div class="col-sm-12 col-md-6 col-lg-7 ">
-						<h3 class="text-justify aM">Hello! I'm an Aspiring Full Stack Web Developer / Web Developer Studying 	MERN Stack (MongoDB, Express, Reactjs, Nodejs), Being a Web Developer is my goal
+						<h3 class="text-justify aM">Hello! I'm an Aspiring Full Stack Web Developer / Web Developer, Currently Enrolled at Zuitt, Studying 	MERN Stack (MongoDB, Express, Reactjs, Nodejs), Being a Web Developer is my goal. I do love Creating Web Pages / Web App.
             			</h3>
+            			<div class="icon text-center">
+							<a href="https://www.facebook.com/mharko.pagulayan" target="_blank"><i class="fab fa-facebook iconbtn"></i></a>
+							<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fab fa-google-plus-square iconbtn"></i></a>
+							<a href="https://github.com/pagulayan09" target="_blank"><i class="fab fa-github iconbtn"></i></a>
+							<a href="https://gitlab.com/pagulayan415" target="_blank"><i class="fab fa-gitlab iconbtn"></i></a>
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
+
 		<section class="eAttainment">
-						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#ffffff" fill-opacity="1" d="M0,224L21.8,202.7C43.6,181,87,139,131,149.3C174.5,160,218,224,262,256C305.5,288,349,288,393,256C436.4,224,480,160,524,144C567.3,128,611,160,655,170.7C698.2,181,742,171,785,154.7C829.1,139,873,117,916,106.7C960,96,1004,96,1047,96C1090.9,96,1135,96,1178,90.7C1221.8,85,1265,75,1309,64C1352.7,53,1396,43,1418,37.3L1440,32L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z"></pat></svg>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+				<path fill="#ffffff" fill-opacity="1" d="M0,224L21.8,202.7C43.6,181,87,139,131,149.3C174.5,160,218,224,262,256C305.5,288,349,288,393,256C436.4,224,480,160,524,144C567.3,128,611,160,655,170.7C698.2,181,742,171,785,154.7C829.1,139,873,117,916,106.7C960,96,1004,96,1047,96C1090.9,96,1135,96,1178,90.7C1221.8,85,1265,75,1309,64C1352.7,53,1396,43,1418,37.3L1440,32L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z">
+				</pat>
+			</svg>
 			<div class="container">
 				<div class="work">
 					<div class="row py-5 px-md-5">
@@ -119,88 +131,92 @@
 							<h1 class="wExperience">Work Experience</h1>
 						</div>
 					</div>
-					<div class="row py-5 px-md-5">
-						<div class="col-md-4 wCompany">
+					<div class="row py-5 px-md-5 text-center">
+						<div class="col-md-4">
 							<h2 class="wCompany">Team Web Plus</h2>
+							<p class="wDate">April 25, 2016 - August 1, 2016</p>
 						</div>
 						<div class="col-md-4">
 							<h3 class="wRole">IT-Trainer</h3>
 						</div>
 						<div class="col-md-4">
-							<p class="wDescription">Installing POS System, Importing Files, Network Cabling, Train the client on how the 	necessary app works</p>
+							<p class="wDescription wPadding"> - Installing POS System, Importing Files, Network Cabling, Train the Client on how the	necessary application works.</p>
 						</div>
 						<div class="col-md-4">
 							<h2 class="wCompany">Hefty Virtual U Solutions</h2>
+							<p class="wDate">April 8, 2016 - March 31, 2017</p>
 						</div>
 						<div class="col-md-4">
 							<h3 class="wRole">Administrative Assistant</h3>
 						</div>
 						<div class="col-md-4">
-							<p class="wDescription">Data Entry, Creating Invoicing, Court-filing, Updatedaily records, Voic Transcription, 	Sending reportsupdtes to client</p>
+							<p class="wDescription wPadding"> - Data Entry, Creating Invoicing, Court-filing, Update Daily Records, Voice Transcription, 	Sending Reports, Updates to Client.</p>
 						</div>
 						<div class="col-md-4">
-							<h2 class="wCompany">RPC Contrls & Electrical Services</h2>
+							<h2 class="wCompany">RPC Controls & Electrical Services</h2>
+							<p class="wDate">June 12, 2017 - PRESENT</p>
 						</div>
 						<div class="col-md-4">
 							<h3 class="wRole">Technical Specialist</h3>
 						</div>
-						<div class="col-md-4">
-							<p class="wDescription">Monitoring Operations, Maintaining Records of Testing,Inspecting Procedures, Maintaining Compliance, Fabricating electrical control panels, Implementing quality standards</p>
+						<div class="col-md-4 wPadding">
+							<p class="wDescription"> - Monitoring Operations, Maintaining Records of Testing, Inspecting Procedures, Maintaining Compliance, Fabricating Electrical Control Panels, Implementing quality standards.</p>
 						</div>
+						<hr>
 					</div>
 				</div>
 				<div class="education">
 					<div class="row py-5 px-md-5">
 						<div class="col-md-12 text-center">
-							<h1>Educational Attainment</h1>
+							<h1 class="wEducation">Educational Attainment</h1>
 						</div>
 					</div>
-					<div class="row py-5 px-md-5">
+					<div class="row py-5 px-md-5 text-center">
 						<div class="col-md-4">
-							<h2>Primary</h2>
+							<h2 class="eLevel">Primary</h2>
 						</div>
 						<div class="col-md-4">
-							<h3>S.Y: 2001 - 2002</h3>
+							<h3 class="eSYear">S.Y: 2001 - 2002</h3>
 						</div>
 						<div class="col-md-4">
-							<p>Kapangian Central School</p>
+							<p class="schoolA">Kapangian Central School</p>
 						</div>
 						<div class="col-md-4">
-							<h2 class="align-right">-</h2>
+							<h2 class="align-right eLevel"></h2>
 						</div>
 						<div class="col-md-4">
-							<h3>S.Y: 2002 - 2006</h3>
+							<h3 class="eSYear">S.Y: 2002 - 2006</h3>
+						</div>
+						<div class="col-md-4 ePadding">
+							<p class="schoolA">Naungan Elementary School</p>
 						</div>
 						<div class="col-md-4">
-							<p>Naungan Elementary School</p>
+							<h2 class="eLevel">Secondary</h2>
 						</div>
 						<div class="col-md-4">
-							<h2>Secondary</h2>
+							<h3 class="eSYear">S.Y: 2006 - 2011</h3>
+						</div>
+						<div class="col-md-4 ePadding">
+							<p class="schoolA">Linao National High School</p>
 						</div>
 						<div class="col-md-4">
-							<h3>S.Y: 2006 - 20011</h3>
+							<h2 class="eLevel">Tertiary</h2>
 						</div>
 						<div class="col-md-4">
-							<p>Linao National High School</p>
+							<h3 class="eSYear">S.Y: 2011 - 2012</h3>
+						</div>
+						<div class="col-md-4 ePadding">
+							<p class="schoolA">Western leyte College</p>
 						</div>
 						<div class="col-md-4">
-							<h2>Tertiary</h2>
+							<h2 class="eLevel"></h2>
 						</div>
 						<div class="col-md-4">
-							<h3>S.Y: 20011 - 20012</h3>
+							<h3 class="eSYear">S.Y: 2012 - 2016</h3>
 						</div>
 						<div class="col-md-4">
-							<p>Western leyte College</p>
-						</div>
-						<div class="col-md-4">
-							<h2>-</h2>
-						</div>
-						<div class="col-md-4">
-							<h3>S.Y: 20012 - 20016</h3>
-						</div>
-						<div class="col-md-4">
-							<p>Eastern Visayas State University</p>
-							<p>*Best Programmer*</p>
+							<p class="schoolA">Eastern Visayas State University</p>
+							<p class="schoolA sAward">*Best Programmer*</p>
 						</div>
 					</div>
 				</div>
@@ -213,37 +229,37 @@
 		<!-- Project Section -->
 		<section id="projects" class="projects">
 			<div class="container">
-			<div class="row py-5 px-md-5">
+			<div class="row py-5 px-md-5 text-center pPadding">
 				<div class="col-md-12">
-					<h1>Projects</h1>
+					<h1 class="pTitle">Projects</h1>
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 cPPadding">
 					<div class="card">
-  						<img src="assets/bubble.png" class="card-img-top img-fluid" alt="...">
+  						<img src="assets/bubble.png" class="card-img-top img-fluid imgPadding" alt="...">
   						<div class="card-body">
-  						  <h5 class="card-title">Card title</h5>
+  						  <h3 class="card-title">Capstone 1</h3>
   						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  						  <a href="#" class="btn btn-primary">Go somewhere</a>
+  						  <a href="#" class="btn btn-primary btnProject">Go somewhere</a>
   						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 cPPadding">
 					<div class="card">
-  						<img src="assets/bubble.png" class="card-img-top img-fluid" alt="...">
+  						<img src="assets/bubble.png" class="card-img-top img-fluid imgPadding" alt="...">
   						<div class="card-body">
-  						  <h5 class="card-title">Card title</h5>
+  						  <h3 class="card-title">Capstone 2</h3>
   						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  						  <a href="#" class="btn btn-primary">Go somewhere</a>
+  						  <a href="#" class="btn btn-primary btnProject">Go somewhere</a>
   						</div>
 					</div>
 				</div>
-				<div class="col-md-4">
+				<div class="col-sm-12 col-md-12 col-lg-12 col-xl-4 cPPadding">
 					<div class="card">
-  						<img src="assets/bubble.png" class="card-img-top img-fluid" alt="...">
+  						<img src="assets/bubble.png" class="card-img-top img-fluid imgPadding" alt="...">
   						<div class="card-body">
-  						  <h5 class="card-title">Card title</h5>
+  						  <h3 class="card-title">Capstone 3</h2>
   						  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-  						  <a href="#" class="btn btn-primary">Go somewhere</a>
+  						  <a href="#" class="btn btn-primary btnProject">Go somewhere</a>
   						</div>
 					</div>
 				</div>
@@ -255,34 +271,42 @@
 		<!-- Contact Section -->
 		<section id="contacts" class="contact">
 			<div class="container">
-				<div class="row text-center">
-					<div class="col-md-12">
-						<h1>Contacts</h1>
-						<h4>Quezon City, Phiilppines</h4>
-						<h4>+9067565044 - Globe</h4>
-						<h4>+9484479166 - Smart</h4>
-						<h4>pagulayan415@gmail.com</h4>
+				<hr>
+				<div class="row">
+					<div class="col-md-12 contactP">
+						<h1 class="cTitle text-center">Contact Us</h1>
+						<h4 class="text-center"><i class="fas fa-house-user cIcon"></i>Quezon City, Phiilppines</h4>
+						<h4 class="text-center"><i class="fas fa-mobile-alt cIcon"></i>+639067565044 - Globe</h4>
+						<h4 class="text-center"><i class="fas fa-mobile-alt cIcon"></i>+639484479166 - Smart</h4>
+						<h4 class="text-center"><i class="fas fa-envelope cIcon"></i>pagulayan415@gmail.com</h4>
 					</div>
-					<div class="col-md-6">
+					<div class="col-lg-6 col-md-12 contactPC">
 						<form>
+							<div class="contactP">
+							<h1 class="title text-center"> Send Us a Message</h1>
   							<div class="mb-3">
-								<input type="text" class="form-control" id="username" aria-describedby="emailHelp" placeholder="Username">
+  								<label for="username" class="lInput">Name</label>
+								<input type="text" class="form-control cInput" id="username" aria-describedby="emailHelp">
   							</div>
   							<div class="mb-3">
-    							<input type="email" class="form-control" id="email" placeholder="Email">
+  								<label for="email" class="lInput">Email</label>
+    							<input type="email" class="form-control cInput" id="email">
   							</div>
   							<div class="mb-3">
-    							<input type="number" class="form-control" id="email"
-    							placeholder="Contact Number">
-  							</div>
+  								<label for="cNumber" class="lInput">Contact Number</label>
+    							<input type="text" class="form-control cInput" id="cNumber"
+    							>
+   							</div>
   							<div class="mb-3">
-    							<textarea class="form-control" aria-label="With textarea"></textarea>
+  								<label for="message" class="lInput">Message</label>
+    							<textarea class="form-control cInput" id="message" aria-label="With textarea"></textarea>
   							</div>
-  								<button type="submit" class="btn btn-primary">Submit</button>
+  							</div>
+  								<button type="submit" class="btn btn-primary btn-contact">Submit</button>
 						</form>
 					</div>
-					<div class="col-md-6">
-						<!-- <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405.64664316553774!2d121.01877820734693!3d14.7022412379987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b13b9a2774e7%3A0xdad0e5b7e73f0d10!2s8%20Rosal%20St%2C%20Novaliches%2C%20Quezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1637772553859!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe> -->
+					<div class="col-lg-6 col-md-12 contactD">
+						<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d405.64664316553774!2d121.01877820734693!3d14.7022412379987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b13b9a2774e7%3A0xdad0e5b7e73f0d10!2s8%20Rosal%20St%2C%20Novaliches%2C%20Quezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1637772553859!5m2!1sen!2sph" width="100%" height="100%" style="border:1;" allowfullscreen="" loading="lazy"></iframe>
 					</div>
 				</div>
 			</div>
@@ -291,11 +315,61 @@
 
 		<!-- Footer -->
 		<section id="footer" class="footer">
-			<div class="container-fluid">
-				<p>All rights Reserve</p>
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+				<path fill="#ffffff" fill-opacity="1" d="M0,224L21.8,202.7C43.6,181,87,139,131,149.3C174.5,160,218,224,262,256C305.5,288,349,288,393,256C436.4,224,480,160,524,144C567.3,128,611,160,655,170.7C698.2,181,742,171,785,154.7C829.1,139,873,117,916,106.7C960,96,1004,96,1047,96C1090.9,96,1135,96,1178,90.7C1221.8,85,1265,75,1309,64C1352.7,53,1396,43,1418,37.3L1440,32L1440,0L1418.2,0C1396.4,0,1353,0,1309,0C1265.5,0,1222,0,1178,0C1134.5,0,1091,0,1047,0C1003.6,0,960,0,916,0C872.7,0,829,0,785,0C741.8,0,698,0,655,0C610.9,0,567,0,524,0C480,0,436,0,393,0C349.1,0,305,0,262,0C218.2,0,175,0,131,0C87.3,0,44,0,22,0L0,0Z">
+				</pat>
+			</svg>
+
+			<div class="container-fluid text-center">
+				<div class="icon">
+					<a href="https://www.facebook.com/mharko.pagulayan" target="_blank"><i class="fab fa-facebook iconbtn"></i></a>
+					<a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fab fa-google-plus-square iconbtn"></i></a>
+					<a href="https://github.com/pagulayan09" target="_blank"><i class="fab fa-github iconbtn"></i></a>
+					<a href="https://gitlab.com/pagulayan415" target="_blank"><i class="fab fa-gitlab iconbtn"></i></a>
+				</div>
+				<h1 class="footerA">&copy John Marco Pagulayan, All Rights Reserved.</h1>
 			</div>
 		</section>
 		<!-- End of Footer -->
+
+
+	
+
+    <!-- Modal -->
+	<div class="modal fade modalS" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog">
+	    	<div class="modal-content">
+	    	  	<div class="modal-header">
+	    	    	<div class="col-lg-6 col-md-12 contactM">
+						<form class="contactM text-center">
+							<div class="contactm">
+							<h1 class="title text-center"> Send Us a Message</h1>
+  							<div class="mb-3">
+  								<label for="username" class="mInput">Name</label>
+								<input type="text" class="form-control mInput" id="username" aria-describedby="emailHelp">
+  							</div>
+  							<div class="mb-3">
+  								<label for="email" class="mInput">Email</label>
+    							<input type="email" class="form-control mInput" id="email">
+  							</div>
+  							<div class="mb-3">
+  								<label for="cNumber" class="mInput">Contact Number</label>
+    							<input type="text" class="form-control mInput" id="cNumber"
+    							>
+   							</div>
+  							<div class="mb-3">
+  								<label for="message" class="mInput">Message</label>
+    							<textarea class="form-control mInput" id="message" aria-label="With textarea"></textarea>
+  							</div>
+  							</div>
+  								<button type="submit" class="btn btn-primary btn-contact">Submit</button>
+						</form>
+					</div>
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+	<!-- End of Modal -->
 
 		
 		
