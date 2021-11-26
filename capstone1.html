@@ -35,7 +35,7 @@
 	<div class="back-ground" >
 		<!-- Navbar Section -->
 		<section class="nav-bar">
-			<nav class="navbar navbar-expand-lg navbar-light ">
+			<nav class="navbar navbar-expand-lg navbar-dark ">
 			  <div class="container">
 			    <a class="navbar-brand navN" href="#"><img src="assets/jmp.png" class="mLogo">MarksFolio</a>
 			    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -72,7 +72,7 @@
   								<h1 class="nMarco">Hello! I'm "John Marco Pagulayan"</h1>
 	  							<p class="lead">an Aspiring Full Stack Developer / Web Developer</p>
 	  							<div class="mt-4 mb-4">
-  									<a class="btn jmbBtn mr-3 text-center" href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Us</a>
+  									<a class="btn jmbBtn mr-3 text-center" href="#" role="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Contact Me</a>
   								</div>
   								<div class="icon">
 									<a href="https://www.facebook.com/mharko.pagulayan" target="_blank"><i class="fab fa-facebook iconbtn"></i></a>
@@ -114,6 +114,23 @@
 							<a href="https://github.com/pagulayan09" target="_blank"><i class="fab fa-github iconbtn"></i></a>
 							<a href="https://gitlab.com/pagulayan415" target="_blank"><i class="fab fa-gitlab iconbtn"></i></a>
 						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="certficate">
+			<div class="container">
+				<div class="row py-5 px-md-5">
+					<div class="col-md-12 text-center">
+						<h1 class="Cert">Certificates</h1>
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-6 aPadding">
+						<img src="assets/cer2.jpg" class="img-fluid cerPadding"
+						class="img-fluid cerPadding" data-bs-toggle="modal" data-bs-target="#cer1Modal">
+					</div>
+					<div class="col-sm-12 col-md-12 col-lg-6 aPadding">
+						<img src="assets/cer1.jpg" class="img-fluid cerPadding" data-bs-toggle="modal" data-bs-target="#cer2Modal">
 					</div>
 				</div>
 			</div>
@@ -274,7 +291,7 @@
 				<hr>
 				<div class="row">
 					<div class="col-md-12 contactP">
-						<h1 class="cTitle text-center">Contact Us</h1>
+						<h1 class="cTitle text-center">Contact Me</h1>
 						<h4 class="text-center"><i class="fas fa-house-user cIcon"></i>Quezon City, Phiilppines</h4>
 						<h4 class="text-center"><i class="fas fa-mobile-alt cIcon"></i>+639067565044 - Globe</h4>
 						<h4 class="text-center"><i class="fas fa-mobile-alt cIcon"></i>+639484479166 - Smart</h4>
@@ -283,7 +300,7 @@
 					<div class="col-lg-6 col-md-12 contactPC">
 						<form>
 							<div class="contactP">
-							<h1 class="title text-center"> Send Us a Message</h1>
+							<h1 class="title text-center"> Send Me a Message</h1>
   							<div class="mb-3">
   								<label for="username" class="lInput">Name</label>
 								<input type="text" class="form-control cInput" id="username" aria-describedby="emailHelp">
@@ -343,23 +360,23 @@
 	    	    	<div class="col-lg-6 col-md-12 contactM">
 						<form class="contactM text-center">
 							<div class="contactm">
-							<h1 class="title text-center"> Send Us a Message</h1>
+							<h1 class="title text-center"> Send Me a Message</h1>
   							<div class="mb-3">
-  								<label for="username" class="mInput">Name</label>
-								<input type="text" class="form-control mInput" id="username" aria-describedby="emailHelp">
+  								<!-- <label for="username" class="mInput">Name</label> -->
+								<input type="text" class="form-control mInput" id="username" aria-describedby="emailHelp" placeholder="Name">
   							</div>
   							<div class="mb-3">
-  								<label for="email" class="mInput">Email</label>
-    							<input type="email" class="form-control mInput" id="email">
+  								<!-- <label for="email" class="mInput">Email</label> -->
+    							<input type="email" class="form-control mInput" id="email" placeholder="Email">
   							</div>
   							<div class="mb-3">
-  								<label for="cNumber" class="mInput">Contact Number</label>
-    							<input type="text" class="form-control mInput" id="cNumber"
+  								<!-- <label for="cNumber" class="mInput">Contact Number</label> -->
+    							<input type="text" class="form-control mInput" id="cNumber" placeholder="Contact Number" 
     							>
    							</div>
   							<div class="mb-3">
-  								<label for="message" class="mInput">Message</label>
-    							<textarea class="form-control mInput" id="message" aria-label="With textarea"></textarea>
+  								<!-- <label for="message" class="mInput">Message</label> -->
+    							<textarea class="form-control mInput" id="message" aria-label="With textarea" placeholder="Message"></textarea>
   							</div>
   							</div>
   								<button type="submit" class="btn btn-primary btn-contact">Submit</button>
@@ -371,10 +388,27 @@
 	</div>
 	<!-- End of Modal -->
 
-		<script src="https://apps.elfsight.com/p/platform.js" defer></script>
-<div class="elfsight-app-d483a634-6f09-4d91-9e70-fb1b220bf16d"></div>
-		
+<!-- Certficate Image Modal -->
+<div class="modal fade modalS" id="cer1Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	  	<div class="modal-dialog modal-lg modal-dialog-centered">
+	    	<div class="modal-content modalSize text-center">
+	    	  	<div class="modal-header">
+	    	  		<img src="assets/cer2.jpg" class="img-fluid ">
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
 
+<div class="modal fade modalS" id="cer2Modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal-dialog modal-lg modal-dialog-centered">
+	  	<div class="modal-content modalSize text-center">
+	      	<div class="modal-header">
+	      		<img src="assets/cer1.jpg" class="img-fluid ">
+	      		</div>
+	    	</div>
+	  	</div>
+	</div>
+<!-- End of Certificate Modal -->
 	
 </body>
 </html>
