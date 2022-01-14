@@ -22,6 +22,29 @@ body {
   background-size: 100%;
 }
 
+.scroll-up-btn{
+  position: fixed;
+  height: 45px;
+  width: 42px;
+  background: none;
+  border-radius: 10px;
+  border: 4px solid #051222;
+  right: 30px;
+  bottom: 30px;
+  text-align: center;
+  line-height: 45px;
+  color: #051222;
+  z-index: 9999;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.scroll-up-btn:hover{
+  background: #051222;
+  color: #fff;
+}
+
+
 /*NavBar Section*/
 .nav-bar{
   padding-bottom: 50px;
@@ -31,11 +54,8 @@ body {
   width: 100%;
   position: fixed;
   /*padding: 10px;*/
-  background-color: transparent;
-  background: rgba(0, 0, 0, 0.6);
-   backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
-  -moz-backdrop-filter: blur(4px);
+  transition: 0.8s;
+  background-color: #051222;
   z-index: 3;
 }
 
@@ -47,8 +67,8 @@ body {
   color:  #abf4e6 !important;
   font-weight: 600;
   font-size: 25px;
-  float: right;
-  text-align: left;
+  float: center;
+  text-align: center;
   transition: 0.8s;
 }
 
@@ -63,6 +83,12 @@ body {
 
 .navIcon{
   padding-right: 10px;
+}
+
+.nav--hidden{
+  transform: translateY(-120px);
+  box-shadow: none;
+  transition: 0.8s;
 }
 
 /*End of NavBar Section*/
@@ -93,9 +119,10 @@ body {
   font-size: 30px;
   color: #fff;
   border-radius: 20px;
+  border: 4px solid #003f74;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
-  transition: all 0.5s ease;
+  /*transition: all 0.5s ease;*/
   background: #003f74;
    box-shadow: 0 10px 30px 0px rgba(1,1,1,1.1);
   -webkit-box-shadow: 0 10px 30px 0px rgba(1,1,1,1.1);
@@ -105,20 +132,31 @@ body {
 
 .jmbBtn:hover,.btn-contact:hover{
   background: #02739d;
-  color: #fff;
-  transform: scale(1.1);
+  color: #051222;
+  border: 4px solid #051222;
+  /*transform: scale(1.1);*/
 }
 
-
-.nMarco{
+.hello{
   padding-top: 80px;
   font-weight: 600;
+  font-size: 25px;
+}
+
+.nMarco{
+  font-weight: 600;
+  font-size: 60px;
 }
 
 .lead{
   font-weight: 600;
+  font-size: 30px;
 }
 
+.lead span{
+  color: crimson;
+  font-weight: 900;
+}
 .imgDiv{
   padding: 50px;
 }
@@ -186,6 +224,17 @@ body {
   color: #09264e;
 }
 
+.sImage{
+  height: 70%;
+  width: 50%;
+  transition: 0.5s;
+}
+
+.sImage:hover{
+  transform: scale(1.1);
+}
+
+
 /*.Cert{
   text-transform: uppercase;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
@@ -217,7 +266,7 @@ body {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   -webkit-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
   -moz-text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.6);
-  padding-bottom: 50px;
+  padding: 50px 0 50px 0;
   font-weight: 600;
   font-size: 40px; 
   color: #09264e;

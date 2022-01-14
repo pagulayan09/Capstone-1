@@ -1,22 +1,21 @@
-$(document).ready(function() {
-    $(window).scroll(function () {
-        if ($(document).scrollTop() > 150) {
-          $("#navnav").addClass("show-nav").fadeIn();
-          
-        } else {
-          $("#navnav").removeClass("show-nav").fadeOut();
-        }
-      });
+const nav = document.querySelector(".navbar")
 
-    $("img").mousedown(function(){
-        return false;
-    });
+let lastScrollY = window.scrollY;
 
-    //NAVBAR-COLLAPSE
-    $(document).on('click','.navbar-collapse',function(e) {
-      if( $(e.target).is('a') ) {
-          $(".navCollapse").collapse('hide');
-          // $(".navCollapse2").collapse('hide');
-      }
-    });
+window.addEventListener("scroll", () =>{
+  if (lastScrollY < window.scrollY){
+    nav.classList.add("nav--hidden");
+
+  }else{
+    nav.classList.remove("nav--hidden");
+  }
+
+  lastScrollY = window.scrollY;
+
 });
+
+const scrollUpButton = document.querySelector('.scroll-up-btn');
+
+scrollUpButton.addEventListener("click", () =>{
+  window.scrollTo(0, 0);
+})
